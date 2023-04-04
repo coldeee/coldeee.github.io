@@ -270,7 +270,7 @@ div, h2, p, figure {
 }
 
 .copyright {
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 30px;
 }
 
@@ -383,4 +383,10 @@ div, h2, p, figure {
     display: none;
   }
 
+}
+
+@media screen and (max-width: 570px) {
+  .copyright {
+    margin-left: 38%;
+  }
 }
