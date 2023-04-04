@@ -7,16 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamerea</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="./css/main.scss" />
+    <link rel="import" href="./html/releases.html">
+    <script src="./js/main.js"></script>
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="header">
+    <div class="header-pc">
         <div class="header_section header_left">
-            <div class="header_item headerButton"><a class="header_text" href="">NEWS</a></div>
+          <div class="dropdown">
+            <div class="header_item headerButton header_news"><a class="header_text" href="">NEWS</a></div>
+            <div class="dropdown-content">
+              <a class="dropdown_text" href="./html/releases.html">last news</a>
+              <a class="dropdown_text" href="#">previews</a>
+              <a class="dropdown_text" href="#">releases</a>
+            </div>
+          </div>
+          <div class="dropdown">
             <div class="header_item headerButton"><a class="header_text" href="">GUIDES</a></div>
+<!-- Выпадающее меню, пока нету нужды в нем для этого
+            <div class="dropdown-content dropdown_guides">
+              <a class="dropdown_text" href="#">Link 1</a>
+              <a class="dropdown_text" href="#">Link 2</a>
+              <a class="dropdown_text" href="#">Link 3</a>
+            </div>
+-->            
+          </div>
         </div>
         <div class="header_section header_logo">
             <div class="headerlogo headerButton">
@@ -24,19 +41,55 @@
             </div>
         </div>
         <div class="header_section header_right">
+          <div class="dropdown">
             <div class="header_item headerButton"><a class="header_text" href="">REVIEWS</a></div>
+<!-- Выпадающее меню, пока нету нужды в нем для этого
+              <div class="dropdown-content dropdown_reviews">
+              <a class="dropdown_text" href="#">Link 1</a>
+              <a class="dropdown_text" href="#">Link 2</a>
+              <a class="dropdown_text" href="#">Link 3</a>
+            </div>
+-->           
+          </div>
+          <div class="dropdown">
             <div class="header_item headerButton"><a class="header_text" href="">MORE</a></div>
+            <div class="dropdown-content dropdown_more">
+              <a class="dropdown_text" href="#">follow us</a>
+              <a class="dropdown_text" href="#">contact us</a>
+              <a class="dropdown_text" href="#">about site</a>
+            </div>
+          </div>
         </div>
 
     </div>
 
 
 
+
+    <div class="header-phone">
+      <div class="header_section">
+        <div class="dropdown">
+          <div class="header_item headerButton">
+            <a href="#"><i class="fa fa-bars"></i></a>
+          </div>
+          <div class="dropdown-content dropdown_menu">
+            <a class="dropdown_text dropdown_text_phone" href="#">NEWS</a>
+            <a class="dropdown_text dropdown_text_phone" href="#">GUIDES</a>
+            <a class="dropdown_text dropdown_text_phone" href="#">REVIEWS</a>
+          </div>     
+        </div>
+          <div class="headerlogo headerButton">
+            Gamerea
+          </div>
+      </div>
+  </div>
+
+
     <main class="main columns">
         <section class="column main-column">
           <a class="article first-article" href="#">
             <figure class="article-image is-4by3">
-              <img src="https://wargm.ru/img/db/97/97dqdrrq93j.jpg" alt="">
+              <img src="https://images.wallpapersden.com/image/download/enlisted-world-war-2_bGVra26UmZqaraWkpJRmZ21lrWZlZ2k.jpg" alt="">
             </figure>
             <div class="article-body">
               <h2 class="article-title">
@@ -190,45 +243,32 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
-                    <h4>company</h4>
+                    <h4>Gamerea</h4>
                     <ul>
                         <li><a href="#">about us</a></li>
-                        <li><a href="#">our services</a></li>
                         <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">contact us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>get help</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="#">watch</a></li>
-                        <li><a href="#">bag</a></li>
-                        <li><a href="#">shoes</a></li>
-                        <li><a href="#">dress</a></li>
+                        <li><a href="#">copyright</a></li>
+                        <li><a href="#">review policy</a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-   </footer>
 </body>
 
 </html>
