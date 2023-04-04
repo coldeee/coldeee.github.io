@@ -1,0 +1,1 @@
+const nav = document.getElementsByClassName("header-pc")
