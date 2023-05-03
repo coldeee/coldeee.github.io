@@ -1,7 +1,0 @@
-<!-- Выпадающее меню, пока нету нужды в нем для этого
-              <div class="dropdown-content dropdown_reviews">
-              <a class="dropdown_text" href="#">Link 1</a>
-              <a class="dropdown_text" href="#">Link 2</a>
-              <a class="dropdown_text" href="#">Link 3</a>
-            </div>
--->         
