@@ -6,65 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamerea</title>
+    <link rel="stylesheet" href="./css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
     <link rel="import" href="./html/releases.html">
     <script src="./js/main.js"></script>
-    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+<!-- Навигационная панель -->
     <div class="header-pc">
         <div class="header_section header_left">
           <div class="dropdown">
-            <div class="header_item headerButton header_news"><a class="header_text" href="">NEWS</a></div>
-            <div class="dropdown-content">
-              <a class="dropdown_text" href="./html/releases.html">last news</a>
-              <a class="dropdown_text" href="#">previews</a>
-              <a class="dropdown_text" href="#">releases</a>
-            </div>
+            <div class="header_item headerButton header_news"><a class="header_text" href="./html/releases.html">NEWS</a></div>
           </div>
           <div class="dropdown">
-            <div class="header_item headerButton"><a class="header_text" href="">GUIDES</a></div>
-<!-- Выпадающее меню, пока нету нужды в нем для этого
-            <div class="dropdown-content dropdown_guides">
-              <a class="dropdown_text" href="#">Link 1</a>
-              <a class="dropdown_text" href="#">Link 2</a>
-              <a class="dropdown_text" href="#">Link 3</a>
-            </div>
--->            
+            <div class="header_item headerButton"><a class="header_text" href="./html/guide.html">GUIDES</a></div>        
           </div>
         </div>
         <div class="header_section header_logo">
             <div class="headerlogo headerButton">
-                Gamerea
+              Gamerea
             </div>
         </div>
         <div class="header_section header_right">
           <div class="dropdown">
-            <div class="header_item headerButton"><a class="header_text" href="">REVIEWS</a></div>
-<!-- Выпадающее меню, пока нету нужды в нем для этого
-              <div class="dropdown-content dropdown_reviews">
-              <a class="dropdown_text" href="#">Link 1</a>
-              <a class="dropdown_text" href="#">Link 2</a>
-              <a class="dropdown_text" href="#">Link 3</a>
-            </div>
--->           
+            <div class="header_item headerButton header_news"><a class="header_text" href="./html/review.html">REVIEWS</a></div>  
           </div>
           <div class="dropdown">
-            <div class="header_item headerButton"><a class="header_text" href="">MORE</a></div>
+            <div class="header_item headerButton"><a class="header_text" href="#">MORE</a></div>
             <div class="dropdown-content dropdown_more">
-              <a class="dropdown_text" href="#">follow us</a>
-              <a class="dropdown_text" href="#">contact us</a>
-              <a class="dropdown_text" href="#">about site</a>
+              <a class="dropdown_text" href="#footer">follow us</a>
+              <a class="dropdown_text" href="#footer">contact us</a>
+              <a class="dropdown_text" href="./html/about.html">about site</a>
             </div>
           </div>
         </div>
-
     </div>
-
-
-
 
     <div class="header-phone">
       <div class="header_section">
@@ -73,9 +52,9 @@
             <a href="#"><i class="fa fa-bars"></i></a>
           </div>
           <div class="dropdown-content dropdown_menu">
-            <a class="dropdown_text dropdown_text_phone" href="#">NEWS</a>
-            <a class="dropdown_text dropdown_text_phone" href="#">GUIDES</a>
-            <a class="dropdown_text dropdown_text_phone" href="#">REVIEWS</a>
+            <a class="dropdown_text dropdown_text_phone" href="./html/releases.html">NEWS</a>
+            <a class="dropdown_text dropdown_text_phone" href="./html/guide.html">GUIDES</a>
+            <a class="dropdown_text dropdown_text_phone" href="./html/review.html">REVIEWS</a>
           </div>     
         </div>
           <div class="headerlogo headerButton">
@@ -83,13 +62,13 @@
           </div>
       </div>
   </div>
-
+<!-- Основная часть страницы -->
 
     <main class="main columns">
         <section class="column main-column">
           <a class="article first-article" href="#">
             <figure class="article-image is-4by3">
-              <img src="https://i.playground.ru/i/pix/2284743/image.jpg" alt="">
+              <img src="https://images.wallpapersden.com/image/download/enlisted-world-war-2_bGVra26UmZqaraWkpJRmZ21lrWZlZ2k.jpg" alt="">
             </figure>
             <div class="article-body">
               <h2 class="article-title">
@@ -186,7 +165,7 @@
                 Aunkere named the release date of the CS version:GO to Source 2
               </h2>
               <p class="article-content">
-                Esports player and streamer Evgeny Aunkere Karyat revealed details about the new version of CS:GO. 
+                Esports player and streamer Evgeny Aunkere Karyat revealed details about the new version of CS:GO. On a personal broadcast, he said that the version of the shooter on the Source 2 engine will be released on March 21, and also talked about several changes to the novelty. It is not known whether the content maker was serious and whether his information is accurate.
               </p>
               <footer class="article-info">
                 <span>By Rykovanov.B</span>
@@ -238,8 +217,8 @@
           </a>
         </section>
       </main>
-
-      <footer class="footer">
+<!-- Footer -->
+      <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col">
@@ -272,7 +251,6 @@
         <div class="copyright">
           © 2023 Gamerea.com
         </div>
-
       </footer>
 </body>
 
