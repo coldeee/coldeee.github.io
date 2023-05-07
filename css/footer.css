@@ -2,16 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.footer{
+.footer {
 	background-color: #24262b;
     padding: 70px 0;
     font-family: "Roboto", "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+}
+
+.footer .container {
+	background-color: #24262b;
+    padding: 70px 0;
+    font-family: "Roboto", "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
-.footer-col h4{
+.footer-col-left h4, .footer-col-center h4, .footer-col-right h4
+{
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -19,7 +28,8 @@
 	font-weight: 500;
 	position: relative;
 }
-.footer-col h4::before{
+.footer-col-left h4::before, .footer-col-center h4::before, .footer-col-right h4::before
+{
 	content: '';
 	position: absolute;
 	left:0;
@@ -32,7 +42,8 @@
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footer-col-left ul li a, .footer-col-center ul li a, .footer-col-right ul li a 
+{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #ffffff;
@@ -42,11 +53,11 @@
 	display: block;
 	transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
+.footer-col-left ul li a:hover, .footer-col-center ul li a:hover, .footer-col-right ul li a:hover {
 	color: #ffffff;
 	padding-left: 8px;
 }
-.footer-col .social-links a{
+.footer-col-right .social-links a {
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -58,7 +69,7 @@
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+.footer-col-right .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
 }
@@ -68,7 +79,7 @@
 	flex-wrap: wrap;
 }
 
-.footer-col ul {
+.footer-col-left ul {
     list-style: none;
 }
 .copyright {
@@ -78,4 +89,9 @@
 .container{
 	max-width: 1170px;
 	margin-left: 29%;
+}
+
+.row .footer-col-center {
+	display: flexbox;
+	justify-self: center;
 }
