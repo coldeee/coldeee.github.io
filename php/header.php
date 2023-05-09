@@ -46,7 +46,7 @@
           </div>     
         </div>
           <div class="headerlogo headerButton">
-            Gamerea
+            <a href="../index.php">Gamerea</a>
           </div>
       </div>
   </div>
