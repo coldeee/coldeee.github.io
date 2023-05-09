@@ -15,51 +15,9 @@
 
 <body>
 
-    <div class="header-pc">
-        <div class="header_section header_left">
-          <div class="dropdown">
-            <div class="header_item headerButton header_news"><a class="header_text" href="#column">NEWS</a></div>
-          </div>
-          <div class="dropdown">
-            <div class="header_item headerButton"><a class="header_text" href="">GUIDES</a></div>
-          </div>
-        </div>
-        <div class="header_section header_logo">
-            <div class="headerlogo headerButton">
-                <a href="../index.html">Gamerea</a>
-            </div>
-        </div>
-        <div class="header_section header_right">
-          <div class="dropdown">
-            <div class="header_item headerButton"><a class="header_text" href="">REVIEWS</a></div>      
-          </div>
-          <div class="dropdown">
-            <div class="header_item headerButton"><a class="header_text" href="">MORE</a></div>
-            <div class="dropdown-content dropdown_more">
-              <a class="dropdown_text" href="#footer">follow us</a>
-              <a class="dropdown_text" href="#">contact us</a>
-              <a class="dropdown_text" href="#">about site</a>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="header-phone">
-      <div class="header_section">
-        <div class="dropdown">
-          <div class="header_item headerButton">
-            <a href="#"><i class="fa fa-bars"></i></a>
-          </div>
-          <div class="dropdown-content dropdown_menu">
-            <a class="dropdown_text dropdown_text_phone" href="#">NEWS</a>
-            <a class="dropdown_text dropdown_text_phone" href="#">GUIDES</a>
-            <a class="dropdown_text dropdown_text_phone" href="#">REVIEWS</a>
-          </div>     
-        </div>
-          <div class="headerlogo headerButton">
-            <a href="../index.html">Gamerea</a>
-          </div>
-      </div>
-  </div>
+<?php 
+  require './php/header.php'; 
+?>
 
   <main class="main columns">
     <section class="column main-column">
@@ -133,40 +91,9 @@
     </section>
   </main>
 
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Gamerea</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">contact us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">copyright</a></li>
-                        <li><a href="#">review policy</a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-          © 2023 Gamerea.com
-        </div>
-    </footer>
+<?php 
+  require './php/footer.php'; 
+?>
 
 </body>
 </html>
